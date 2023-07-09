@@ -1,0 +1,19 @@
+version: '3'
+services:
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: myapp_development
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data/
+    ports:
+      - "5432:5432"
+  # rails:
+  #   image: rails-signup
+  #   command: ["rails", "server", "-e", "production", "-b", "0.0.0.0"]
+  #   ports:
+  #     - "3000:3000"
+  #   depends_on:
+  #     - db
