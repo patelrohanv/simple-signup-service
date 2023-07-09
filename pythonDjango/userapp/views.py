@@ -10,8 +10,8 @@ def user_create_view(request):
     context = {
         'form': form
     }
-    return render(request, "userapp/user_create.html", context)
+    return render(request, "userapp/create_users.html", context)
 
-def list_users(request):
+def user_list_view(request):
     users = User.objects.all()
     return render(request, 'userapp/list_users.html', {'users': users})
