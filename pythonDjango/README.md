@@ -79,11 +79,11 @@ After setting up the virtual environment and installing the necessary dependenci
 
 4. Register Users on the Form
 
-To register a new user, navigate to the user registration form at `http://localhost:8000/userapp/create`. Fill out the form with the user's details and submit it.
+To register a new user, navigate to the user registration form at `http://localhost:8000/users/create`. Fill out the form with the user's details and submit it.
 
 5. See Registered Users
 
-To see the list of registered users, navigate to `http://localhost:8000/userapp/list`. This page will display a list of all users who have registered through the form.
+To see the list of registered users, navigate to `http://localhost:8000/users/`. This page will display a list of all users who have registered through the form.
 
 ## Running Tests
 

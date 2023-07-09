@@ -7,6 +7,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.DS_Store
 
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
