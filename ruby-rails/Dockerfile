@@ -12,16 +12,16 @@ COPY Gemfile /myapp/Gemfile
 COPY Gemfile.lock /myapp/Gemfile.lock
 
 # Install gems
-RUN bundle install --without development test
+RUN bundle install
 
 # Copy the rest of the application into the working directory
 COPY . /myapp
 
 # Precompile Rails assets
-RUN RAILS_ENV=production bundle exec rake assets:precompile
+RUN RAILS_ENV=development bundle exec rake assets:precompile
 
 # Expose port 3000 to the Docker host, so we can access our application
 EXPOSE 3000
 
 # The command to start our application
-CMD ["rails", "server", "-e", "production", "-b", "0.0.0.0"]
+CMD ["rails", "server", "-e", "development", "-b", "0.0.0.0"]
