@@ -91,7 +91,7 @@ This application is containerized using Docker. Here's how you can build and run
     docker run -p 3000:3000 rails-signup
     ```
 
-    This command runs the `rails-signup` image and forwards port 3000 in the container to port 3000 on the Docker host. The Rails application will be accessible at `http://localhost:3000`.
+    This command runs the `rails-signup` image and forwards port 3000 in the container to port 3000 on the Docker host. The Rails application will be accessible at `http://0.0.0.0:3000`.
 
 Please ensure that you have Docker installed and that the `build_image.sh` script is executable. If the `build_image.sh` script is not executable, you can make it executable with the following command:
 
@@ -99,8 +99,3 @@ Please ensure that you have Docker installed and that the `build_image.sh` scrip
 chmod +x build_image.sh
 ```
 
-<!-- # To Dos
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* ... -->
